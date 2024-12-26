@@ -1,0 +1,108 @@
+/* Body and General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.header {
+    text-align:left;
+    padding: 20px;
+    background-color: ;
+    color: #28a745;
+    border-bottom: 2px solid #006400;
+}
+
+h1, h3 {
+    font-weight: 600;
+}
+
+h3 {
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table th,
+table td {
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #28a745;
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+/* Search Section */
+.search-section {
+    margin-bottom: 30px;
+}
+
+.search-section input[type="text"] {
+    padding: 10px;
+    width: calc(100% - 120px);
+    margin-right: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.search-section button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background-color: #006400;
+}
+
+/* Results Section */
+.search-results {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+/* Sales Graph Section */
+.sales-graph-section {
+    margin-bottom: 30px;
+}
+
+.sales-graph-section canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 15px;
+}

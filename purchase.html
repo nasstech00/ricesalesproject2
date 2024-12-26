@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Rice</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Complete Purchase</h1>
+        <p>Fill out the form below to complete your purchase.</p>
+    </header>
+    <main class="main-content">
+        <form id="purchase-form" class="form">
+            <div class="form-group">
+                <label for="buyerType">Are you a Civil Servant?</label>
+                <select id="buyerType" name="buyerType" required onchange="toggleBuyerType()">
+                    <option value="">Select Buyer Type</option>
+                    <option value="civilServant">Civil Servant</option>
+                    <option value="nonCivilServant">Non Civil Servant</option>
+                </select>
+            </div>
+
+            <div id="civil-servant-fields" class="conditional-fields" style="display: none;">
+                <div class="form-group">
+                    <label for="computerNumber">Computer Number</label>
+                    <input type="text" id="computerNumber" name="computerNumber" placeholder="Enter your Computer Number">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="nin">NIN Number</label>
+                <input type="text" id="nin" name="nin" required placeholder="Enter your NIN">
+                <div id="nin-validation" class="validation-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="riceType">Rice Quantity</label>
+                <select id="riceType" name="riceType" required>
+                    <option value="">Select Quantity</option>
+                    <option value="50kg">50kg Bag</option>
+                    <option value="17kg">17kg Bag</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Number of Bags</label>
+                <input type="number" id="quantity" name="quantity" min="1" required placeholder="Enter number of bags">
+            </div>
+            <button type="button" onclick="processPurchase()" class="primary-btn">Complete Purchase</button>
+        </form>
+
+        <div id="receipt" class="receipt" style="display: none;">
+            <h2>Receipt</h2>
+            <p><strong>Buyer Type:</strong> <span id="receipt-buyer-type"></span></p>
+            <p><strong>Computer Number:</strong> <span id="receipt-computer-number"></span></p>
+            <p><strong>NIN:</strong> <span id="receipt-nin"></span></p>
+            <p><strong>Rice Type:</strong> <span id="receipt-rice-type"></span></p>
+            <p><strong>Quantity:</strong> <span id="receipt-quantity"></span></p>
+            <p><strong>Total Price:</strong> <span id="receipt-total"></span></p>
+            <button onclick="printReceipt()" class="secondary-btn">Print Receipt</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Rice Distribution Program. All rights reserved.</p>
+    </footer>
+    <script src="scripts/purchase.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+/* User Profile Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.header {
+    text-align: left;
+    padding: 20px;
+    
+    color: #006600;
+}
+
+.main-content {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container {
+    text-align: center;
+}
+
+.profile-header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #008000;
+}
+
+.profile-header h2 {
+    margin: 0;
+    color: #008000;
+}
+
+.profile-details,
+.purchase-history,
+.financial-summary {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.profile-actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button.primary-btn {
+    background-color: #008000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.primary-btn:hover {
+    background-color: #005500;
+}
+
+button.secondary-btn {
+    background-color: #cccccc;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.secondary-btn:hover {
+    background-color: #aaaaaa;
+}
+
+.footer {
+    text-align: center;
+    background-color:#aaaaaa;
+    color:white;
+    padding: 10px 0;
+}

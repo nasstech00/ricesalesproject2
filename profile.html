@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+    <header class="header">
+        <h1>User Profile</h1>
+        <p>Welcome to your profile page.</p>
+    </header>
+    <main class="main-content">
+        <div class="profile-container">
+            <div class="profile-header">
+                <img id="profile-pic" src="images/pp.png" alt="Profile Picture">
+                <h2 id="user-name">User Name</h2>
+            </div>
+            <div class="profile-details">
+                <h3>Personal Details</h3>
+                <p><strong>Name:</strong> <span id="profile-name"></span></p>
+                <p><strong>Phone:</strong> <span id="profile-phone"></span></p>
+                <p><strong>Address:</strong> <span id="profile-address"></span></p>
+                <p><strong>Gender:</strong> <span id="profile-gender"></span></p>
+                <p><strong>NIN:</strong> <span id="profile-nin"></span></p>
+            </div>
+            <div class="purchase-history">
+                <h3>Purchase History</h3>
+                <ul id="purchase-history-list">
+                    <!-- Purchase items will be dynamically added here -->
+                </ul>
+            </div>
+            <div class="financial-summary">
+                <h3>Financial Summary</h3>
+                <p><strong>Total Debts:</strong> ₦<span id="total-debts">0</span></p>
+            </div>
+            <div class="profile-actions">
+                <button onclick="navigateToPurchase()" class="primary-btn">Make a Purchase</button>
+                <button onclick="navigateTodashboard()" class="primary-btn">Dashboard</button>
+                <button onclick="logout()" class="secondary-btn">Log Out</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; Sokoto State Governemnt 2024 Rice Sales And Distribution Program. All rights reserved.</p>
+    </footer>
+    <script src="scripts/profile.js"></script>
+</body>
+</html>
